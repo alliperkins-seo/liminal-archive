@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="./assets/index-BHxKxfib.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-De3dFPwo.css">
+  <script type="module" crossorigin src="./assets/index-CgxpDGNB.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DxQsOPJn.css">
 </head>
 <body>
   <canvas id="c"></canvas>
@@ -19,7 +19,10 @@
     <div class="s" id="hint">Night on the cul-de-sac. The doors remember.</div>
   </div>
 
-  <button id="home" title="Back to the start of Brandywine">⌂ Brandywine</button>
+  <div id="navbtns">
+    <button id="home" title="Back to the start of Brandywine">⌂ Brandywine</button>
+    <button id="restart" title="Wipe all progress and start the game over">↺ Start over</button>
+  </div>
 
   <div id="prompt">Open this door</div>
   <div id="caption"></div>
@@ -34,6 +37,26 @@
       <button id="enterGuest">preview the guest version — what "dreamguest" sees</button>
     </div>
     <button id="lockword">🔒 not you? lock the archive &amp; enter a different word</button>
+  </div>
+
+  <div id="restart-confirm">
+    <div id="restart-box">
+      <p>This will start the game over, and you will lose all progress. Continue?</p>
+      <div class="restart-btns">
+        <button id="restart-cancel">Cancel</button>
+        <button id="restart-yes">Yes, start over</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="publicgate">
+    <div id="publicgate-box">
+      <h2>The Liminal Archive</h2>
+      <p>This world is still being built. If you have the word, come in.</p>
+      <input id="publicgate-field" type="password" placeholder="the word" autocomplete="off" />
+      <div id="publicgate-err">that's not it</div>
+      <button id="publicgate-enter">Enter</button>
+    </div>
   </div>
 
   <div id="reader"><div id="page"></div></div>
