@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="./assets/index-C2fcX00A.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-SI6HVB0l.css">
+  <script type="module" crossorigin src="./assets/index-DkFYzoFj.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CuWL6qZp.css">
 </head>
 <!-- inline dark: if CSS or JS ever fails to load, the page fails DARK,
      not as a white flash (her mom's machine, 2026-07-16) -->
@@ -32,12 +32,14 @@
   <div id="distort"></div>
 
   <div id="veil">
-    <h2>The Liminal Archive<br />— Brandywine Walk —</h2>
-    <p>The red brick, the green shutters, the word Fifteen over the door. The cul-de-sac keeps its shape; the doors do not keep their contents. Behind each one is a record from the archive — and when you close one, the doors quietly trade dreams, drifting toward whatever you last read. Nothing here maps cleanly. That's the point.</p>
-    <p class="dim">Desktop: click to look, WASD to walk, E or click to open doors, C to kneel down for a closer look.<br />Touch: hold the LEFT side and drag to walk (a pad appears under your thumb), drag the RIGHT side to look, and tap a nearby door — or the amber button — to open it.</p>
+    <h2>The Liminal Archive<span class="veil-sub">Brandywine Walk</span></h2>
+    <p>This is Alli’s old cul-de-sac, more or less. Red brick, green shutters, Fifteen over the door. Behind each door is a dream from a quarter century of her journals. Close one and the dreams shuffle, drifting toward whatever you read last. Notice what you notice, and take what you want with you.</p>
+    <div class="howto">
+      <div class="howto-row howto-desktop"><span class="howto-label">Desktop</span><span>Click to look around. <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to walk. <kbd>E</kbd> or click to open a door. <kbd>C</kbd> to kneel for a closer look.</span></div>
+      <div class="howto-row howto-touch"><span class="howto-label">Touch</span><span>Hold the left side and drag to walk. Drag the right side to look. Tap a nearby door, or the amber button, to open it.</span></div>
+    </div>
     <div class="veil-doors">
       <button id="enter">Step outside</button>
-      <button id="enterGuest">preview the guest version — what "dreamguest" sees</button>
     </div>
     <button id="lockword">🔒 not you? lock the archive &amp; enter a different word</button>
   </div>
@@ -56,9 +58,11 @@
     <div id="publicgate-box">
       <h2>The Liminal Archive</h2>
       <p>This world is still being built. If you have the word, come in.</p>
-      <input id="publicgate-field" type="password" placeholder="the word" autocomplete="off" />
-      <div id="publicgate-err">that's not it</div>
-      <button id="publicgate-enter">Enter</button>
+      <div class="publicgate-row">
+        <input id="publicgate-field" type="password" placeholder="the word" autocomplete="off" />
+        <button id="publicgate-enter">Step inside</button>
+      </div>
+      <div id="publicgate-err">That's not the word.</div>
     </div>
   </div>
 
